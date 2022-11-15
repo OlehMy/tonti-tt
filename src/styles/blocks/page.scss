@@ -1,15 +1,25 @@
 .page {
+  margin: 0 auto;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 
   &__body {
     background: linear-gradient(
-      180deg, $c-light-blue 0%,
-      $c-light-red 44.15%,
+      180deg,
+      $c-light-blue 0%,
+      $c-light-red 44%,
       $c-blue 100%
     );
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  &__header {
+    margin-bottom: 40px;
+  }
+
+  &__about {
+    margin-bottom: 90px;
   }
 }

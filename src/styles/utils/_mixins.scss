@@ -4,3 +4,15 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin onTablet {
+  @media (max-width: $media-tablet) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (max-width: $media-mobile) {
+    @content;
+  }
+}

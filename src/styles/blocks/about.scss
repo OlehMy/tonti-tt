@@ -1,0 +1,55 @@
+.about {
+  &__wrapper {
+    @extend %flex-row-sb;
+    flex-wrap: nowrap;
+
+    @include onMobile {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    max-width: 584px;
+    margin-right: 40px;
+
+    @include onMobile {
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: $c-text-gray;
+  }
+
+  &__buttons {
+    @extend %flex-row-sb;
+    height: 44px;
+    width: 220px;
+    min-width: 180px;
+    margin-top: 40px;
+    align-self: flex-end;
+    background-color: $c-white;
+    border-radius: 22px;
+
+    @include onMobile {
+      align-self: center;
+    }
+  }
+
+  &__button {
+    width: 50%;
+    height: 100%;
+
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 22px;
+  }
+}

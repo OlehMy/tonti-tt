@@ -3,4 +3,9 @@
 @import "typography";
 @import "normalize";
 
+@import "./blocks/container.scss";
 @import "./blocks/page.scss";
+@import "./blocks/header.scss";
+@import "./blocks/about.scss";
+@import "./blocks/monthly-plans.scss";
+@import "./blocks/button.scss";

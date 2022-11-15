@@ -1,0 +1,21 @@
+.header {
+  &__content {
+    @extend %flex-row-sb;
+    height: 94px;
+    max-width: 1366px;
+    padding: 0 50px;
+  }
+  
+  &__button {
+    width: 124px;
+    height: 38px;
+
+    font-size: 14px;
+    background-color: $c-pink;
+    border-radius: 19px;
+
+    @include onMobile {
+      display: none;
+    }
+  }
+}

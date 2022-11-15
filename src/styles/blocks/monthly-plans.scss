@@ -1,0 +1,29 @@
+.monthly-plans {
+  &__wrapper {
+    @extend %flex-row-sb;
+
+    @include onTablet {
+      flex-direction: column;
+    }
+  }
+
+  @include onTablet {
+    &__card:nth-child(1) {
+      align-self: flex-start;
+    }
+
+    &__card:nth-child(2) {
+      align-self: center;
+    }
+
+    &__card:nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+
+  @include onMobile {
+    &__card:nth-child(odd) {
+      align-self: center;
+    }
+  }
+}

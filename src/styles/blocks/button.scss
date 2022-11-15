@@ -1,0 +1,15 @@
+.button {
+  font-weight: 500;
+  color: $c-white;
+  border: none;
+  cursor: pointer;
+
+  @include hover(background-color, $c-pink-hover);
+
+  &--text-dark {
+    color: $c-dark-blue;
+    background-color: $c-white;
+    
+    @include hover(color, $c-white);
+  }
+}
