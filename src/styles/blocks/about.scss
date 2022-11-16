@@ -29,7 +29,7 @@
     color: $c-text-gray;
   }
 
-  &__buttons {
+  &__links {
     @extend %flex-row-sb;
     height: 44px;
     width: 220px;
@@ -44,13 +44,25 @@
     }
   }
 
-  &__button {
+  &__link {
     width: 50%;
     height: 100%;
 
     font-size: 12px;
     letter-spacing: 0.8px;
     text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 44px;
     border-radius: 22px;
+    color: $c-dark-blue;
+    background-color: transparent;
+
+    @include hover-2(background-color, $c-pink-hover, color, $c-white);
+
+    &--active {
+      color: $c-white;
+      background-color: $c-pink-hover;
+    }
   }
 }

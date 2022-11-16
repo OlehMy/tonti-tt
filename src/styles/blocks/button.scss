@@ -5,11 +5,4 @@
   cursor: pointer;
 
   @include hover(background-color, $c-pink-hover);
-
-  &--text-dark {
-    color: $c-dark-blue;
-    background-color: transparent;
-    
-    @include hover(color, $c-white);
-  }
 }

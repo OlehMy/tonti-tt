@@ -1,0 +1,37 @@
+.yearly-plans {
+  &__wrapper {
+    @extend %flex-row-sb;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0 24px;
+    margin-bottom: 64px;
+
+    background-color: $c-white-50;
+    border-radius: 26px;
+
+    @include onTablet {
+      flex-direction: column;
+      padding: 0 32px;
+    }
+  }
+
+  @include onTablet {
+    &__card:nth-child(1) {
+      align-self: flex-start;
+    }
+
+    &__card:nth-child(2) {
+      align-self: center;
+    }
+
+    &__card:nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+
+  @include onMobile {
+    &__card:nth-child(odd) {
+      align-self: center;
+    }
+  }
+}

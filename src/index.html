@@ -3,20 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Jadwalin</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/favicon.ico"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body class="page__body">
     <header class="page__header header">
       <div class="header__content">
-        <a href="/" class="header__menu-link">
+        <a href="/monthly" class="header__menu-link">
           <img
             class="header__menu-img"
             src="images/menu.svg"
             alt="logo.svg"
           >
         </a>
-        <a href="/" class="header__logo logo">
+        <a href="/monthly" class="header__logo logo">
           <img
             class="logo__img"
             src="images/logo.svg"
@@ -37,14 +42,19 @@
                 we're here to help you scale.
               </p>
             </div>
-            <div class="about__buttons">
-              <button class="about__button button button--text-dark">monthly</button>
-              <button class="about__button button button--text-dark">yearly</button>
+            <div class="about__links">
+              <a class="about__link about__link--active" href="/monthly">
+                monthly
+              </a>
+              <a class="about__link" href="/yearly">
+                yearly
+              </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="page__monthly monthly-plans">
+
+      <section class="page__plan monthly-plans" data-match="/monthly">
         <div class="container">
           <div class="monthly-plans__wrapper">
             <article class="monthly-plans__card plan-card">
@@ -82,6 +92,7 @@
               </ul>
               <button class="plan-card__button button">Choose plan</button>
             </article>
+
             <article class="monthly-plans__card plan-card">
               <p class="plan-card__price">
                 <span class="plan-card__price-value">$54</span>
@@ -125,6 +136,7 @@
               </ul>
               <button class="plan-card__button button">Choose plan</button>
             </article>
+
             <article class="monthly-plans__card plan-card plan-card--popular">
               <p class="plan-card__price">
                 <span class="plan-card__price-value plan-card__price-value--popular">$89</span>
@@ -180,7 +192,144 @@
             </article>
           </div>
         </div>
+      </section>
 
+      <section class="page__plan yearly-plans" data-match="/yearly">
+        <div class="container">
+          <div class="yearly-plans__wrapper">
+            <article class="yearly-plans__card plan-card">
+              <p class="plan-card__price">
+                <span class="plan-card__price-value">$12</span>
+                <span class="plan-card__price-marker">/month</span>
+              </p>
+              <h2 class="plan-card__title">Starter</h2>
+              <p class="plan-card__info">Unleash the power of automation.</p>
+              <ul class="plan-card__options">
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-1.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text">Multi-step Zaps</span>
+                </li>
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-1.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text">3 Premium Apps</span>
+                </li>
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-1.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text">2 Users team</span>
+                </li>
+              </ul>
+              <button class="plan-card__button button">Choose plan</button>
+            </article>
+            <article class="monthly-plans__card plan-card">
+              <p class="plan-card__price">
+                <span class="plan-card__price-value">$36</span>
+                <span class="plan-card__price-marker">/month</span>
+              </p>
+              <h2 class="plans-card__title">Professional</h2>
+              <p class="plan-card__info">Advanced tools to take your work to the next level.</p>
+              <ul class="plan-card__options">
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-1.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text">Multi-step Zaps</span>
+                </li>
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-1.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text">Unlimited Premium Apps</span>
+                </li>
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-1.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text">50 Users Team</span>
+                </li>
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-1.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text">Shared Workspace</span>
+                </li>
+              </ul>
+              <button class="plan-card__button button">Choose plan</button>
+            </article>
+            <article class="monthly-plans__card plan-card plan-card--popular">
+              <p class="plan-card__price">
+                <span class="plan-card__price-value plan-card__price-value--popular">$56</span>
+                <span class="plan-card__price-marker plan-card__price-marker--popular">/month</span>
+              </p>
+              <h2 class="plan-card__title plan-card__title--popular">Company</h2>
+              <p class="plan-card__info plan-card__info--popular">Automation plus enterprise-grade features.</p>
+              <ul class="plan-card__options plan-card__options--popular">
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-2.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text">Multi-step Zaps</span>
+                </li>
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-2.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text">Unlimited Premium Apps</span>
+                </li>
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-2.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text">Unlimited Users team</span>
+                </li>
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-2.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text">Advanced Admin</span>
+                </li>
+                <li class="plan-card__option">
+                  <img
+                    class="plan-card__option-img"
+                    src="images/option-img-2.svg"
+                    alt="check-icon.svg"
+                  >
+                  <span class="plan-card__option-text plan-card__option-text--popular">
+                    Custom Data Retention
+                  </span>
+                </li>
+              </ul>
+              <button class="plan-card__button plan-card__button--popular button">Choose plan</button>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
     <script type="text/javascript" src="scripts/main.js"></script>
