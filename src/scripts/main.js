@@ -4,6 +4,7 @@ const pages = document.querySelectorAll('.page__plan');
 const links = document.querySelectorAll('.about__link');
 
 pages[1].hidden = true;
+window.history.pushState({}, '', '/');
 
 const handleClick = (event, currentLink) => {
   event.preventDefault();
