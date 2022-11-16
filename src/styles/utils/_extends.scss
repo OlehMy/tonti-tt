@@ -6,6 +6,14 @@
   color: $c-dark-blue;
 }
 
+%h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  color: $c-dark-blue;
+}
+
 %flex-row-sb {
   display: flex;
   flex-wrap: wrap;
@@ -23,5 +31,4 @@
 %flex-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }

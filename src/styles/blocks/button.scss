@@ -8,7 +8,7 @@
 
   &--text-dark {
     color: $c-dark-blue;
-    background-color: $c-white;
+    background-color: transparent;
     
     @include hover(color, $c-white);
   }

@@ -21,5 +21,9 @@
 
   &__about {
     margin-bottom: 90px;
+
+    @include onTablet {
+      margin-bottom: 32px;
+    }
   }
 }
